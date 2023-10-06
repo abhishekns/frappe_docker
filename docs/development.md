@@ -101,9 +101,15 @@ We need to tell bench to use the right containers instead of localhost. Run the 
 
 ```shell
 bench set-config -g db_host mariadb
-bench set-config -g redis_cache redis://redis-cache:6379
-bench set-config -g redis_queue redis://redis-queue:6379
-bench set-config -g redis_socketio redis://redis-socketio:6379
+bench set-db-host mariadb
+bench set-mariadb-host mariadb
+#bench set-config -g redis_cache redis://redis-cache:6379
+bench set-redis-cache-host redis://redis-cache:6379
+#bench set-config -g redis_queue redis://redis-queue:6379
+bench set-redis-queue-host redis://redis-queue:6379
+#bench set-config -g redis_socketio redis://redis-socketio:6379
+bench set-redis-socketio-host redis://redis-socketio:6379
+
 ```
 
 For any reason the above commands fail, set the values in `common_site_config.json` manually.
