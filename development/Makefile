@@ -20,3 +20,5 @@ site-config:
 purge:
 	rm -rf frappe-bench
 
+ignorecrlf:
+	git config --global core.autocrlf true

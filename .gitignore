@@ -27,5 +27,6 @@ __pycache__
 venv
 env
 
+frappe-bench
 
 
