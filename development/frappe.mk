@@ -2,9 +2,9 @@ include ../env.mk
 
 site-config:
 	bench set-mariadb-host maridadb
-	bench set-redis-cache-host redis://redis-cache:6379
-	bench set-redis-queue-host redis://redis-queue:6379
-	bench set-redis-socketio-host redis://redis-socketio:6379
+	bench set-redis-cache-host redis://redis_cache:6379
+	bench set-redis-queue-host redis://redis_queue:6379
+	bench set-redis-socketio-host redis://redis_socketio:6379
 	./env/bin/pip install honcho
 	sed -i '/redis/d' ./Procfile
 

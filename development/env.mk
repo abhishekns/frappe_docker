@@ -11,5 +11,5 @@ MARIADB_PASSWD=123
 ADMIN_PASSWD=admin
 
 APP_NAME:=gurukala_internation_app
-APP_REPO:=https://w5mjy2svg3wgzjcjd64euaouoa5gkezldc5gma4fsxa6byirphoq@dev.azure.com/IntlApp/IntGKApp/_git/gurukula_international_app
+APP_REPO:=git@ssh.dev.azure.com:v3/IntlApp/IntGKApp/gurukula_international_app
 APP_BRANCH:=master
