@@ -10,6 +10,6 @@ SITE:=development.localhost
 MARIADB_PASSWD=123
 ADMIN_PASSWD=admin
 
-APP_NAME:=gurukala_internation_app
+APP_NAME:=gurukala_international_app
 APP_REPO:=git@ssh.dev.azure.com:v3/IntlApp/IntGKApp/gurukula_international_app
 APP_BRANCH:=master

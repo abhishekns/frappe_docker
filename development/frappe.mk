@@ -10,7 +10,8 @@ site-config:
 
 new-site:
 	bench new-site $(SITE) --mariadb-root-password $(MARIADB_PASSWD) --admin-password $(ADMIN_PASSWD) 
-
+	bench use $(SITE)
+	
 dev-config:
 	bench --site $(SITE) set-config developer_mode 1
 	bench --site $(SITE) clear-cache
