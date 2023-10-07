@@ -16,6 +16,7 @@ Start a new terminal and run below commands to setup your development. See the *
  
 
 ```
+    make pyenv
     make setup
 ```
 

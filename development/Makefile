@@ -1,6 +1,8 @@
 # Default setting for the project
 include env.mk
 
+pyenv:
+	pyenv install $(PYENV_VERSION)
 
 setup:
 	git config --global --add safe.directory /workspace
