@@ -8,6 +8,7 @@ setup:
 	git config --global --add safe.directory /workspace
 	$(NVM) use $(NVM_DEFAULT)
 	bench init $(SKIP_REDIS_CONFIG_GEN) --frappe-branch $(FRAPPE_BRANCH_VERSION) frappe-bench
+	./env/bin/pip install honcho supervisor
 	echo "include ../frappe.mk" > ./frappe-bench/Makefile 
 
 
