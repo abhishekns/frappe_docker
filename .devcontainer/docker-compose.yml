@@ -10,6 +10,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: 123
     hostname: mariadb
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     volumes:
       - mariadb-data:/var/lib/mysql
 
@@ -24,14 +26,20 @@ services:
   redis-cache:
     image: redis:alpine
     hostname: redis-cache
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
   redis-queue:
     image: redis:alpine
     hostname: redis-queue
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
   redis-socketio:
     image: redis:alpine
     hostname: redis-socketio
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
   frappe:
     image: frappe/bench:latest
@@ -47,6 +55,8 @@ services:
     ports:
       - 8000-8005:8000-8005
       - 9000-9005:9000-9005
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
 volumes:
   mariadb-data:
