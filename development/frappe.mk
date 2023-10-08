@@ -20,7 +20,7 @@ dev-config:
 
 get-app:
 	# --branch is optional, use it to point to branch on custom app repository
-	bench get-app --branch $(APP_BRANCH) $(APP_REPO) --resolve-deps
+	bench get-app --branch $(APP_BRANCH) $(APP_REPO)
 
 install-app:
 	bench --site $(SITE) install-app $(APP_NAME)
