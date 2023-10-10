@@ -25,3 +25,13 @@ purge:
 
 ignorecrlf:
 	git config --global core.autocrlf true
+
+# do not do any of below, if you don't know what you are doing :)
+rancher:
+	docker run -d --name=rancher-server --restart=unless-stopped -p 80:80 -p 443:443 --privileged rancher/rancher:$(RANCHER_VERSION)
+
+
+minikube:
+	minikube start
+
+
